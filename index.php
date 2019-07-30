@@ -42,12 +42,7 @@ $date = date('m/d/Y', time());
             <div class="contenedorSecundario">
                 <div class="contenedorSelect color1" id="T1">
                         <select name="selectionA" id="selection1" required>
-                            <option value="Camilo">
-                            Camilo
-                            </option>
-                            <option value="Kavan">
-                            Kavan
-                            </option>
+                         
                         </select>
                 </div>
                 <div class="contenedorSelect color2">

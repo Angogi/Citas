@@ -6,9 +6,11 @@ $coders = array("Alexandro", "Amau", "Camilo",
                 "Sergi", "Shuangjie", "Solomon", "Unai","Andres",
                 "Thierry");
 $fomadores = array("Edgar","David","Jennifer","Marina", "Ali");
-
+?>
+<?php
 foreach ($coders as $value) {
    echo $value;
+   echo "<select><option value='.$value.'>.$value.</option></select>";
+ 
 }
-
 ?>
