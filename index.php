@@ -42,7 +42,7 @@ $date = date('m/d/Y', time());
             <div class="contenedorSecundario">
                 <div class="contenedorSelect color1" id="T1">
                         <select name="selectionA" id="selection1" required>
-                         
+                            <?php include './funcionalidad/getListadoCoders.php'; ?>
                         </select>
                 </div>
                 <div class="contenedorSelect color2">
@@ -51,15 +51,7 @@ $date = date('m/d/Y', time());
                 </div>
                 <div class="contenedorSelect color3" id="T2">
                         <select name="selectionP" id="selection2" required>
-                        <option value="David">
-                        David
-                        </option>
-                        <option value="Edgar">
-                            Edgar
-                        </option>
-                        <option value="Marina">
-                            Marina
-                        </option>
+                            <?php include './funcionalidad/getListadoFormadores.php'; ?>
                         </select>
                 </div>
             </div>
