@@ -1,0 +1,53 @@
+/*comienzo del main incluye recuadro de visualizacion de citas*/
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#tablacitas{
+    margin: 0;
+    width: 100%;
+    height: 0px;
+    position: relative;
+    background-color: blue;
+    border: 5px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+#tablacitas.active{
+    height: 500px;
+    transition: all 0.5s;
+}
+
+#tablacitas2{
+    margin: 0;
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    left: 20%;
+    list-style: none;
+    overflow: auto;
+}
+
+#source{
+    margin: 0;
+    padding-top: 10px;
+    width: 60%;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    left: 15%;
+    background-color: aqua;
+
+}
+
+#target{
+    margin: 0;
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    background-color: blueviolet;
+    left: 70%;
+}
