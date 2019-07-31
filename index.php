@@ -24,12 +24,7 @@ $date = date('m/d/Y', time());
 <main>
         <div id="tablacitas" class="active">
                 <ul id="tablacitas2">  <!--Lo cambiaremos por CSS-->
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item A</li>
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item B</li>
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item C</li>
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item D</li>
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item E</li> 
-                    <li id="source" draggable="true" ondragstart="drag(event)">Item F</li> 
+                    <?php include './funcionalidad/getPreguntas.php'; ?>
                 </ul>
                 <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
