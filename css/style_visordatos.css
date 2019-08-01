@@ -10,8 +10,6 @@ main{
     width: 100%;
     height: 0px;
     position: relative;
-    background-color: blue;
-    border: 5px;
     transition: all 0.5s;
     overflow: hidden;
 }
@@ -19,6 +17,7 @@ main{
 #tablacitas.active{
     height: 500px;
     transition: all 0.5s;
+    border: solid;
 }
 
 #tablacitas2{
@@ -39,7 +38,10 @@ main{
     position: relative;
     text-align: center;
     left: 15%;
-    background-color: aqua;
+    border-bottom: 5px solid transparent;
+    border-image: repeating-linear-gradient(100deg, white, black, white 100%) 50;
+
+    border-image-slice: 1;
 
 }
 
@@ -48,6 +50,6 @@ main{
     width: 30%;
     height: 500px;
     position: absolute;
-    background-color: blueviolet;
     left: 70%;
+    background-color: white;
 }
