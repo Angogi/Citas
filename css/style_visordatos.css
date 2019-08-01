@@ -40,7 +40,6 @@ main{
     left: 15%;
     border-bottom: 5px solid transparent;
     border-image: repeating-linear-gradient(100deg, white, black, white 100%) 50;
-
     border-image-slice: 1;
 
 }
