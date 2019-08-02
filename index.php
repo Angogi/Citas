@@ -24,7 +24,7 @@ $date = date('m/d/Y', time());
 <main>
         <div id="tablacitas" class="active">
                 <ul id="tablacitas2">  <!--Lo cambiaremos por CSS-->
-                    <?php include './funcionalidad/getPreguntas.php'; ?>
+                    <?php include './src/getPreguntas.php'; ?>
                 </ul>
                 <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
@@ -32,12 +32,12 @@ $date = date('m/d/Y', time());
 <footer>
     <div class="contenedorPrincipal" id="contenedorPrincipal">
 
-        <form class="form" method="POST" action="./funcionalidad/envioformulario.php">
+        <form class="form" method="POST" action="./src/envioformulario.php">
             <input class="fecha" readonly type="text" value="<?php echo $date; ?>" name="date">
             <div class="contenedorSecundario">
                 <div class="contenedorSelect color1" id="T1">
                         <select name="selectionA" id="selection1" required>
-                            <?php include './funcionalidad/getListadoCoders.php'; ?>
+                            <?php include './src/getListadoCoders.php'; ?>
                         </select>
                 </div>
                 <div class="contenedorSelect color2">
@@ -46,7 +46,7 @@ $date = date('m/d/Y', time());
                 </div>
                 <div class="contenedorSelect color3" id="T2">
                         <select name="selectionP" id="selection2" required>
-                            <?php include './funcionalidad/getListadoFormadores.php'; ?>
+                            <?php include './src/getListadoFormadores.php'; ?>
                         </select>
                 </div>
             </div>
