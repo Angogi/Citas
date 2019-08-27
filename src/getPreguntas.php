@@ -13,12 +13,14 @@
 $sql = "SELECT questions.question_text , usuarios.user_name FROM questions , usuarios, user_questions WHERE questions.question_id = user_questions.question_id AND user_questions.user_send_question_id = usuarios.user_id";
 
 $result = mysqli_query($conn, $sql);
-if (mysqli_num_rows($result) > 0) {
+if (mysqli_num_rows($result) > 0)
+{
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
       echo "<li id='source' draggable='true' ondragstart='drag(event)'><b>" . $row["user_name"] ."</b> " .$row["question_text"]."</li>";
       }
-} else {
+} else 
+{ 
     echo "0 results";
 }
 

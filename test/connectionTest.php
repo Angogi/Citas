@@ -7,7 +7,7 @@
 
         function testIfConnectedToDDBB(){     
             $model = new model();
-            $connect=$model->connection();  
+            $connect=$model->connection();    
             $this->assertEquals("estas on", $connect);
         }     
 
