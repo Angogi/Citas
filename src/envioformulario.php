@@ -1,9 +1,9 @@
 <?php
 
 
-echo $_POST["selectionA"] . "<br>";
-echo $_POST["selectionP"] . "<br>";
-echo $_POST["comment"] . "<br>";
+echo $_POST["nombreEmisor"] . "<br>";
+echo $_POST["nombreReceptor"] . "<br>";
+echo $_POST["consulta"] . "<br>";
 echo $_POST["date"];
 
 ?>

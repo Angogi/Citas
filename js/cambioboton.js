@@ -1,4 +1,5 @@
-function cambiar(){ 
+function invertirEmisorConsulta()
+{ 
     var div1 = document.getElementById('T1');
     var div2 = document.getElementById('T2');
 
