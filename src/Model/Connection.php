@@ -19,10 +19,5 @@ class Connection
         return $connect;
     }
 }
-    // function getQuestions(){
-    //     $sql = "SELECT * FROM user_questions";
-    //     $result = mysqli_query($connect, $sql);
-    // }
-
 
 ?>

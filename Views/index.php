@@ -1,8 +1,8 @@
 <?php
-include_once "../src/CheckCoderList.php";
-use Citas\Model\Model;
+include_once "../vendor/autoload.php";
+use Citas\Controller\Controller;
 
-$model = new Model();
+$controller = new Controller();
 ?>
 
 <!DOCTYPE html>
@@ -31,19 +31,20 @@ $date = date('m/d/Y', time());
     <main>
         <div id="tablacitas" class="active">
             <ul id="tablacitas2">  <!--Lo cambiaremos por CSS-->
-                <?php $model->printConsultaDeCoder(); ?>
+                <?php //$model->printConsultaDeCoder(); ?>
             </ul>
             <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
 
         <div class="contenedorPrincipal" id="contenedorPrincipal">
 
-            <form class="form" method="POST" action="../src/envioformulario.php">
+            <form class="form" method="POST" action="../src/EnvioForm.php">
                 <input class="fecha" readonly type="text" value="<?php echo $date; ?>" name="date">
-                    <div class="contenedorSecundario">
+                    <div class="contenedorSecundario" id="T">
                         <div class="contenedorSelect color1" id="T1">
+                            <!--<label>Coders</label>-->
                             <select name="nombreEmisor" id="selection1" required>
-                                <?php $model->getListadoCoders(); ?>
+                                <?php $controller->consultListadoCoders(); ?>
                             </select>
                         </div>
                         <div class="contenedorSelect color2">
@@ -51,8 +52,9 @@ $date = date('m/d/Y', time());
 
                         </div>
                         <div class="contenedorSelect color3" id="T2">
+                            <!--<label>Formadores</label>-->
                             <select name="nombreReceptor" id="selection2" required>
-                                <?php $model->getListadoFormadores(); ?>
+                                <?php $controller->consultListadoFormadores(); ?>
                             </select>
                         </div>
                     </div>
